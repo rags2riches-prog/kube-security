@@ -18,16 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: kube-security
+email: k8s.v.dev@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Kubernetes Security Specialists with a focus on iterative, multi-layered security processes. 
+  Extensive use of security best practices and open-source technologies allow clients to reduce costs 
+  and security risks across infrastructure layers.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: rags2riches-prog
+github_username:  rags2riches-prog
 
 # Build settings
 theme: minima
