@@ -31,8 +31,10 @@ github_username:  rags2riches-prog
 
 # Build settings
 theme: minima
-plugins:
-  - jekyll-feed
+
+# don't use SCSS
+sass:
+   sourcemap: never
 
 # Exclude from processing.
 # The following items will not be processed, by default.
