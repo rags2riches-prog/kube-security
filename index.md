@@ -3,7 +3,7 @@ layout: default
 title: kube-security
 ---
 
-![kube security](./kube.png)
+![kube security](./assets/images/kube.png)
 
 # Kubernetes Specialists
 
@@ -13,7 +13,7 @@ Run independent, cloud-agnostic Kubernetes forensics against vulnerabilities and
 
 We provide both advisory and high-quality development solutions to secure your cluster and workloads with no lock-in strategies and no strings attached.
 
-### The problem we want to address with Kubernetes
+## The problem we want to address with Kubernetes
 
 Kubernetes is a powerful open source platform to orchestrate containerised applications. Its success and wide adoption have led to a plethora of services, plugins and technologies around its ecosystem, resulting in market offerings that are flooding CTOs and developers' desktops, in an attempt to keep up with constanly new things to know or learn.
 
@@ -21,7 +21,7 @@ Kubernetes developments are not easy. The complex intricacies of the platform co
 
 We offer unbiased, independent, and no-frills services around security. We help diagnose vulnerabilities at across different layers (e.g. cluster, microservice, image binaries, OS), using non-commercial, best-in-class open-source software. Furthermore, we integrate with your existing teams or as independent kubernetes administrators to implement necessary changes to harden your systems, making them more resilient to potential attacks.
 
-### Security Model: a Unique Approach
+## Security Model: a Unique Approach
 
 Security is a complex business. In order to capture the inherent complexities around setup, system hardening and maintenance, we adopt a security model that combines several principles and well-known frameworks into a single, easy-to-digest "context-driven" path to security.
 
@@ -31,7 +31,7 @@ The security model is extremely simplified. What is important to note here is th
 - Orchestrator Level and;
 - System Layer, which includes Kernel space components, Drivers and Hardware.
 
-### How is our model different from others?
+## How is our model different from others?
 
 We use several principles of security:
 
@@ -49,7 +49,6 @@ The CNCF Model represents a typical DevOps pipeline, which includes four differe
 - Distribution
 - Deployment and
 - Runtime phases:
-
     - Access
     - Compute and
     - Storage.
