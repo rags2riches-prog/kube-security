@@ -5,31 +5,24 @@ title: kube-security
 
 ![kube security](./assets/images/kube.png)
 
-# Kubernetes Specialists
-
-Fully certified Kubernetes specialists **(CKA / CKAD / CKS)** with a focus on security.
-
-Run independent, cloud-agnostic Kubernetes forensics against vulnerabilities and mis-configurations at different levels of your technology stack.
-
-We provide both advisory and high-quality development solutions to secure your cluster and workloads with no lock-in strategies and no strings attached.
 
 ## The problem we want to address with Kubernetes
 
-Kubernetes is a powerful open source platform to orchestrate containerised applications. Its success and wide adoption have led to a plethora of services, plugins and technologies around its ecosystem, resulting in market offerings that are flooding CTOs and developers' desktops, in an attempt to keep up with constanly new things to know or learn.
-
 Kubernetes developments are not easy. The complex intricacies of the platform coupled with OS Kernel dependencies and distributed microservices runtime issues, make Kubernetes environments susceptible to cyberattacks from different fronts, vulnerabilities and most ot the time, human-led preventable mis-configurations.
 
-We offer unbiased, independent, and no-frills services around security. We help diagnose vulnerabilities at across different layers (e.g. cluster, microservice, image binaries, OS), using non-commercial, best-in-class open-source software. Furthermore, we integrate with your existing teams or as independent kubernetes administrators to implement necessary changes to harden your systems, making them more resilient to potential attacks.
+We offer unbiased, independent, and no-frills services around security. We help diagnose vulnerabilities across different layers (e.g. cluster, microservice, image binaries, OS), using non-commercial, best-in-class open-source software. Furthermore, we integrate with your existing teams or as independent kubernetes administrators to implement necessary changes to harden your systems, making them more resilient to potential attacks.
+
 
 ## Security Model: a Unique Approach
 
 Security is a complex business. In order to capture the inherent complexities around setup, system hardening and maintenance, we adopt a security model that combines several principles and well-known frameworks into a single, easy-to-digest "context-driven" path to security.
 
-The security model is extremely simplified. What is important to note here is that our model quickly identifies the context where immediate actions are needed. These "contexts" enviroments are three:
+Our security model quickly identifies the context where immediate actions are needed. These "contexts" enviroments are as follows:
 
 - Application and Microservice Layer;
 - Orchestrator Level and;
 - System Layer, which includes Kernel space components, Drivers and Hardware.
+
 
 ## How is our model different from others?
 
