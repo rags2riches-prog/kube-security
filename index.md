@@ -19,9 +19,9 @@ Security is a complex business. In order to capture the inherent complexities ar
 
 Our security model quickly identifies the context where immediate actions are needed. These "contexts" enviroments are as follows:
 
-- Application and Microservice Layer;
-- Orchestrator Level and;
-- System Layer, which includes Kernel space components, Drivers and Hardware.
+- Application and Microservice Layer
+- Orchestrator Level and
+- System Layer, which includes Kernel space components, Drivers and Hardware
 
 
 ## How is our model different from others?
@@ -44,7 +44,7 @@ The CNCF Model represents a typical DevOps pipeline, which includes four differe
 - Runtime phases:
     - Access
     - Compute and
-    - Storage.
+    - Storage
 
 Thus, we take the CNCF Model and iterate through its different phases.These phases may reference a step which was previously taken or may give a completely different perspective to what the previous models had led us to. Thus, it provides us with more powerful insights and road maps to implement.
 
