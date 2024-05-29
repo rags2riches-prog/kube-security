@@ -4,7 +4,7 @@ title: about
 permalink: /about/
 ---
 
-![Kubernetes Specilizations](/assets/images/kube-specs.png)
+![Kubernetes Specilizations](./assets/images/kube-specs.png)
 
 # We are Kubernetes Specialists at the core
 

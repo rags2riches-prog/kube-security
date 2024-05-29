@@ -20,12 +20,12 @@
 
 title: kube-security
 email: k8s.v.dev@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   Kubernetes Security Specialists with a focus on iterative, multi-layered security processes. 
   Extensive use of security best practices and open-source technologies allow clients to reduce costs 
   and security risks across infrastructure layers.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/kube-security"
+url: "https://rags2riches-prog.github.io"
 linkedin_username: kubernetes-cka-vincenzo-tagliavia/
 github_username:  rags2riches-prog
 
