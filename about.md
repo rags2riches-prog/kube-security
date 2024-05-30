@@ -18,12 +18,12 @@ We provide both advisory and high-quality development solutions to secure your c
 
 ## How are we different from the rest?
 
-- We deal with cloud-agnostic technologies and open source software tools
-- We have a no lock-in policy, which means we are not affiliated with SaaS or third-party vendors. This means we are independent and have no conflicts of interests in suggesting specific solutions to you
-- We are flexible around your needs and can travel to your offices if required. Cancellations are subject only to a 24 hours window
-- There are NO minimum contract requirements with us
-- There are NO deposits or lump-sum payments to remit in advance
-- We offer a FREE initial consultation which often includes cluster-wide forensics (cloud-based managed services may not be supported) and an initial roadmap to security
+- We deal with cloud-agnostic technologies and open source software tools; that is:
+- No lock-in policies, which means we are not affiliated with SaaS or third-party vendors. Furthermore, this means we are independent and have no conflicts of interests in suggesting specific solutions to you
+- We are flexible around your needs and can travel to your offices if required
+- No minimum contract requirements 
+- No deposits or lump-sum payments to remit in advance
+- We offer a FREE initial consultation which often includes cluster-wide forensics (cloud-based managed services may not be supported) and an initial roadmap to security, cost optimization or performance fine-tuning
 
 ## Pricing
 

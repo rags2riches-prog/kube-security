@@ -3,52 +3,78 @@ layout: default
 title: kube-security
 ---
 
+# Simplify K8s complexity without the price tag. 
+## Get an independent, and unbiased view of your K8s infrastructure pain points in less than one hour, for free. 
+
+
 ![kube security](./assets/images/kube.png)
 
 
-## The problem we want to address with Kubernetes
+## Which problems we want to address with Kubernetes?
 
 Kubernetes developments are not easy. The complex intricacies of the platform coupled with OS Kernel dependencies and distributed microservices runtime issues, make Kubernetes environments susceptible to cyberattacks from different fronts, vulnerabilities and most ot the time, human-led preventable mis-configurations.
 
-We offer unbiased, independent, and no-frills services around security. We help diagnose vulnerabilities across different layers (e.g. cluster, microservice, image binaries, OS), using non-commercial, best-in-class open-source software. Furthermore, we integrate with your existing teams or as independent kubernetes administrators to implement necessary changes to harden your systems, making them more resilient to potential attacks.
+We offer unbiased, independent, and no-frills services around security and more. 
+
+We help diagnose vulnerabilities across different layers (e.g. cluster, microservice, image binaries, OS), using native built-in Kubernetes objects, and non-commercial, best-in-their-own-class open-source software. 
+
+Furthermore, we can integrate workflows with your existing team as independent kubernetes admin / developers so that necessary changes to harden or improve your systems are implemented efficiently. This substantially reduces the attack surface and helps teams tapping into not well known Kubernetes features for free, rather than paying external providers for abstractions or wrappers around these objects. 
 
 
 ## Security Model: a Unique Approach
 
+![security model (I)](./assets/images/security-model(1).png)
+
 Security is a complex business. In order to capture the inherent complexities around setup, system hardening and maintenance, we adopt a security model that combines several principles and well-known frameworks into a single, easy-to-digest "context-driven" path to security.
 
-Our security model quickly identifies the context where immediate actions are needed. These "contexts" enviroments are as follows:
+Our security model quickly identifies the context where immediate actions are needed (more on this later). 
+These "contexts" enviroments are as follows:
 
 - Application and Microservice Layer
 - Orchestrator Level and
 - System Layer, which includes Kernel space components, Drivers and Hardware
 
 
+The graph above is extremely simplified and still, it gives a good overview of the request-response cycles that go **unfiltered**, and that is, occuring at all time with no interventions and with the default configuration at runtime.
+"Layers" are then placed redundantly across different contexts and components of our infrastructure.
+What we want here is to apply security in depth and with finer granularity for each and every context / component.
+We want to gradually restrict access from/to resources exactly as we want.
+
+
 ## How is our model different from others?
 
-We use several principles of security:
+![security model (II)](./assets/images/security-model(2).png)
+
+You may notice the above graph represents the same model presented previously except that we now add some additional layers and lay out the entire stack vertically.
+You may also notice two intermediate blocks (our example "layers") between the user and the kernel space. 
+KATA Containers, gVISOR, and Kernel MAC Modules are there as an example -- you do not have to implement the exact layers but the principle is exactly the same;
+**restrict system call access** and provide various **isolation mechanisms** which reduce or eliminate altogether blast radius and platform escalations.
+
+
+Now, we said before our approach to security is unique.
+We also said we use several security principles combined together because this has a compounding effect in hardening and securing our whole infrastructure, not just our runtime applications and workloads.
 
 - AAAA
-- POLP or Principle of Least Privilege
+- Principle of Least Privilege (POLP)
 - Zero-Trust Security
 
-The added "A" in the AAA model (Authentication, Authorization, Auditing) stands for Admission Controllers, native built-in kubernetes controllers which also includes third-party webhooks for mutating or validating a request. 
+The added "A" in the commonly used AAA model (Authentication, Authorization, Auditing) stands for Admission Controllers.
+These are native built-in kubernetes objects, which could also includes third-party webhooks for mutating and/or validating a request.
 
-What's more is that for each context (System and OS, Orchestrator, Microservices), we apply security in depth, creating redundant layers (defense in depth) by superimposing another model of Security: the Cloud Native Computing Foundation Security (CNCF) Model.
+If you take another look at the previous graph, you may notice an additional model of security there: the Cloud Native Compute Foundation (CNCF) Security Model.
+The CNCF Security Model is an extention of the CISA Security Whitepaper and it represents a typical DevOps pipeline including four different but interrelated phases.
 
-The CNCF Model represents a typical DevOps pipeline, which includes four different but interrelated phases:
+![CNCF Model](./assets/images/cncf-security-model.png)
 
-- Development
-- Distribution
-- Deployment and
-- Runtime phases:
-    - Access
-    - Compute and
-    - Storage
+The CNCF Security Model starts at the very first phase: Development.
+Each phase depends on the previous one so if tests or policies applied during development fail, the distribution phase does not start. That's all well and good.
+But this model by itself presents a number of different challenges:
 
-Thus, we take the CNCF Model and iterate through its different phases.These phases may reference a step which was previously taken or may give a completely different perspective to what the previous models had led us to. Thus, it provides us with more powerful insights and road maps to implement.
+1. It may not always be possible to start at the Dev phase for a number of different reasons (lack of capabilities, knowledge, organization policies, etc.)
+2. The model suggests running things sequentially so that it may not be desirable to do that in enviroments where performance is an important requirement
+3. You may not have access or control over the whole pipeline phases; for example, in multi-tenancy enviroments, an administrator may not even known the developers behind the workloads running in the cluster and this means that some horrors happening during a previous phase you have no knowledge about, will crawl into your cluster at runtime.
 
-For example, the RUNTIME phase suggests we go back to Access, hence our initial AAAA implementation. The Compute area of the RUNTIME phase suggests we look into isolating mechanisms to block or reduce sys calls to the OS kernel. Or to restrict resource usage with admission plugins (Admission Controllers) like ResourceQuotas or LimitRanges. These are just some examples which are not exhaustive by any means and that suggests how iterations work at different infrastructure layers.
+Since the bulk of security solutions in the market (SaaS, cloud-managed services) are concerned with the runtime phase, we use the CNCF Model as an additional guiding tool to uncover potential vulnerabilities in environments we may not have direct control over. It's like applying a tri-dimensional security suite where contexts and combined security models are our X and Y axis while the CNCF phases are together represented as the Z axis. This is a powerful, multi-dimensional, cost-effective supply chain solution for all your Kubernetes clusters.
 
 
 ## Value Proposition Drivers
