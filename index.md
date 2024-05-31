@@ -3,8 +3,8 @@ layout: default
 title: kube-security
 ---
 
-# Simplify K8s complexity without the price tag. 
-## Get an independent, and unbiased view of your K8s infrastructure pain points in less than one hour, for free. 
+# Safer, Simpler, Cost Efficient Kubernetes Cluster Administration. 
+## Identify Cluster Vulnerabilities in Minutes, For Free. 
 
 
 ![kube security](./assets/images/kube.png)
@@ -12,7 +12,7 @@ title: kube-security
 
 ## Which problems we want to address with Kubernetes?
 
-Kubernetes developments are not easy. The complex intricacies of the platform coupled with OS Kernel dependencies and distributed microservices runtime issues, make Kubernetes environments susceptible to cyberattacks from different fronts, vulnerabilities and most ot the time, human-led preventable mis-configurations.
+Kubernetes developments are inevitably complex. The complex intricacies of the platform coupled with OS Kernel dependencies and distributed microservices runtime issues, make Kubernetes environments susceptible to cyberattacks from different fronts, vulnerabilities and most ot the time, human-led preventable mis-configurations.
 
 We offer unbiased, independent, and no-frills services around security and more. 
 

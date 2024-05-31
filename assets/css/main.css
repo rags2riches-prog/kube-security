@@ -7,18 +7,20 @@ body { font: 500 16px/1.5 "Chakra Petch", sans-serif; color: #111; background-co
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; margin-top: 15px;}
 
-#simplify-k8s-complexity-without-the-price-tag {
+
+/* value proposition headline */
+h1 {
   padding: 30px 0 0 25px;
 }
 
-#get-an-independent-and-unbiased-view-of-your-k8s-infrastructure-pain-points-in-less-than-one-hour-for-free {
+/* supporting value proposition */
+
+h2 {
   margin-top: 0;
   background-color: #9d9c9b14;
   padding-left: 25px;
   border-radius: 18px;
 }
-
-
 
 /** `main` element */
 main { display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
