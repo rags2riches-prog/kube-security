@@ -1,26 +1,19 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2024-06-01
-
+title:  "Kubernetes Security: Our Simplified Security Model"
+date:   2024-06-03
+permalink: /kubernetes-security-model-intro.html
+categories: security
+author: Vincenzo Tagliavia (CKA, CKAD, CKS)
 ---
-
-## Which problems we want to address with Kubernetes?
 
 Kubernetes developments are inevitably complex. The complex intricacies of the platform coupled with OS Kernel dependencies and distributed microservices runtime issues, make Kubernetes environments susceptible to cyberattacks from different fronts, vulnerabilities and most ot the time, human-led preventable mis-configurations.
 
-We offer unbiased, independent, and no-frills services around security and more. 
-
-We help diagnose vulnerabilities across different layers (e.g. cluster, microservice, image binaries, OS), using native built-in Kubernetes objects, and non-commercial, best-in-their-own-class open-source software. 
-
-Furthermore, we can integrate workflows with your existing team as independent kubernetes admin / developers so that necessary changes to harden or improve your systems are implemented efficiently. This substantially reduces the attack surface and helps teams tapping into not well known Kubernetes features for free, rather than paying external providers for abstractions or wrappers around these objects. 
-
-
 ## Security Model: a Unique Approach
 
-![security model (I)](./assets/images/security-model(1).png)
-
 Security is a complex business. In order to capture the inherent complexities around setup, system hardening and maintenance, we adopt a security model that combines several principles and well-known frameworks into a single, easy-to-digest "context-driven" path to security.
+
+![security model I](./assets/images/security-model(1).png)
 
 Our security model quickly identifies the context where immediate actions are needed (more on this later). 
 These "contexts" enviroments are as follows:
@@ -42,9 +35,9 @@ We want to gradually restrict access from/to resources exactly as we want.
 
 You may notice the above graph represents the same model presented previously except that we now add some additional layers and lay out the entire stack vertically.
 You may also notice two intermediate blocks (our example "layers") between the user and the kernel space. 
+
 KATA Containers, gVISOR, and Kernel MAC Modules are there as an example -- you do not have to implement the exact layers but the principle is exactly the same;
 **restrict system call access** and provide various **isolation mechanisms** which reduce or eliminate altogether blast radius and platform escalations.
-
 
 Now, we said before our approach to security is unique.
 We also said we use several security principles combined together because this has a compounding effect in hardening and securing our whole infrastructure, not just our runtime applications and workloads.
@@ -71,13 +64,13 @@ But this model by itself presents a number of different challenges:
 
 Since the bulk of security solutions in the market (SaaS, cloud-managed services) are concerned with the runtime phase, we use the CNCF Model as an additional guiding tool to uncover potential vulnerabilities in environments we may not have direct control over. It's like applying a tri-dimensional security suite where contexts and combined security models are our X and Y axis while the CNCF phases are together represented as the Z axis. This is a powerful, multi-dimensional, cost-effective supply chain solution for all your Kubernetes clusters.
 
+## Which problems we want to address with Kubernetes?
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+We offer unbiased, independent, and no-frills services around security and more. 
+
+We help diagnose vulnerabilities across different layers (e.g. cluster, microservice, image binaries, OS), using native built-in Kubernetes objects, and non-commercial, best-in-their-own-class open-source software. 
+
+Furthermore, we can integrate workflows with your existing team as independent kubernetes admin / developers so that necessary changes to harden or improve your systems are implemented efficiently. This substantially reduces the attack surface and helps teams tapping into not well known Kubernetes features for free, rather than paying external providers for abstractions or wrappers around these objects. 
+
 
 

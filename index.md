@@ -1,10 +1,11 @@
 ---
 layout: default
 title: kube-security
+
 ---
 
-# Simplify Kubernetes Developments. 
-## Identify Cluster Vulnerabilities in Minutes, For Free. {#h2--value-proposition}
+# Simplify Kubernetes Developments                        
+## Identify Cluster Vulnerabilities in Minutes, For Free.
 
 > We provide flexible Kubernetes-as-a-Service solutions for dynamic organizations.
 You do not have to invest huge resources to make your cluster work exactly as it should.
