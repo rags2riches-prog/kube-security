@@ -29,7 +29,7 @@ With almost a decade of experience in containerised applications, micro-services
 
 ![value proposition pillars](./assets/images/vp-sketch.png)
 
-### Focus on High Quality
+### High Quality Focus
 
 We deliver profound insights about systems, how they work, how they are exposed to security vulnerabilities and we define and implement technical solutions with an iterative process. This means defining, redifining and iterating again and again.
 

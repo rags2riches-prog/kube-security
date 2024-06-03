@@ -26,6 +26,11 @@ li > ul, li > ol { margin-bottom: 0; }
 /** Headings */
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
+h3 {
+  border-bottom: 2px solid coral;
+  max-width: 128px;
+}
+
 /** Links */
 a { color: coral; text-decoration: none; }
 a:visited { color: grey; }
