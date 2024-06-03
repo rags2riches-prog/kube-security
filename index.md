@@ -13,7 +13,7 @@ With security in mind at all time, we help you configure, deploy, and run you Ku
 
 ![kube security](./assets/images/kube.png)
 
-## Who are we and who we are not?
+## Who are we and who are we not?
 
 We are fully certified Kubernetes Specialists with CKA, CKAD and CKS Specializations under our belt.
 With almost a decade of experience in containerised applications, micro-services and service oriented architectures (SOA), we are well placed in the market to consult, advise, build and deploy highly secure, scalable and highly available Kubernetes workloads for you.

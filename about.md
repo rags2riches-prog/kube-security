@@ -4,9 +4,9 @@ title: about
 permalink: /about/
 ---
 
-![Kubernetes Specilizations](./assets/images/kube-specs.png)
-
 # We are Kubernetes Specialists at the core
+
+![Kubernetes Specilizations](./assets/images/kube-specs.png)
 
 We are fully certified Kubernetes specialists **(CKA / CKAD / CKS)** with high focus on security.
 If you are reading this and are curious, check out some relevant [specializations here](https://www.credly.com/users/vincenzo-tagliavia/badges).
