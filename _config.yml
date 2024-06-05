@@ -24,8 +24,8 @@ description: >-
   Kubernetes Security Specialists with a focus on iterative, multi-layered security processes. 
   Extensive use of security best practices and open-source technologies allow clients to reduce costs 
   and security risks across infrastructure layers.
-baseurl: "/kube-security"
-url: "https://rags2riches-prog.github.io"
+baseurl: ""
+url: "http://kube-security.dev"
 linkedin_username: kubernetes-cka-vincenzo-tagliavia/
 github_username:  rags2riches-prog
 
@@ -37,6 +37,7 @@ sass:
    sourcemap: never
 
 plugins:
+  - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
 
